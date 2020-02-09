@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="2dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/viewed_image"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/viewed_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/viewed_image"
+            android:text="dealsBrand"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewed_brand"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/viewed_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="this where will be the dealsTitle"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewed_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewed_title"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/viewed_image"
+            android:text="EGP 150"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/viewed_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewed_title"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/viewed_price"
+            android:text="EGP 150"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/viewed_discount"
+            android:padding="4dp"
+            android:background="@drawable/viewed_discount_background"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/buy_now_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="-12%" />
+
+        <Button
+            android:id="@+id/buy_now_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewed_price"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="buy now"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

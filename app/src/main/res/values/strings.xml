@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Market</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_home">Home</string>
+    <string name="fragment_favorites">Saved</string>
+    <string name="fragment_cart">Cart</string>
+    <string name="facebook_app_id">542539509819392</string>
+    <string name="fb_login_protocol_scheme">fb542539509819392</string>
+    <string name="transition_name">image_transition</string>
+</resources>

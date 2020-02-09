@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="2dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/liked_image"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/liked_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/liked_image"
+            android:text="dealsBrand"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/liked_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liked_brand"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/liked_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="this where will be the dealsTitle"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/liked_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liked_title"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/liked_image"
+            android:text="EGP 150"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/liked_oldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liked_title"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/liked_price"
+            android:text=""
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/liked_discount"
+            android:padding="4dp"
+            android:background="@drawable/viewed_discount_background"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/liked_buy_now_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="" />
+
+        <Button
+            android:id="@+id/liked_buy_now_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liked_price"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:text="buy now"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/delete_favourite_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

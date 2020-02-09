@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="4dp"
+    android:padding="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/top_categories_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/top_categories_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="4dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

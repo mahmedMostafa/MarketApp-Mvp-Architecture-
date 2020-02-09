@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorWhite">#fff</color>
+    <color name="black">#212121</color>
+    <color name="alertDialogTextColor">@android:color/darker_gray</color>
+
+</resources>

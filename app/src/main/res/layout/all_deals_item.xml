@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginEnd="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/deals_image"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/deals_brand"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:text="dealsBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/deals_title"
+            android:layout_marginEnd="10dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:text="here will be the titel "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/deals_price"
+               android:layout_marginEnd="10dp"
+               android:textColor="@android:color/black"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="4dp"
+               android:textSize="12sp"
+               android:text="EGP 450"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_below="@id/deals_price"
+               android:id="@+id/deals_old_price"
+               android:layout_marginEnd="10dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="4dp"
+               android:textSize="12sp"
+               android:text="EGP 155 "
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:id="@+id/deals_discount"
+               android:textColor="@color/colorAccent"
+               android:textSize="14sp"
+               android:padding="8dp"
+               android:background="@drawable/discount_background"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:text="-15%"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+       </RelativeLayout>
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/deals_total_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:isIndicator="true"
+            android:max="5"
+            android:maxHeight="15dp"
+            android:minWidth="15dp"
+            android:minHeight="15dp"
+            android:rating="4.5"
+            android:stepSize=".25"
+            app:mrb_progressBackgroundTint="@color/colorPrimaryDark"
+            app:mrb_progressTint="@color/colorPrimaryDark"
+            app:mrb_secondaryProgressTint="@color/colorPrimaryDark" />
+
+
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/deals_free_shipping_layout"
+            android:gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/eligible_for_text_view"
+                android:text="Eligible for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/eligible_for_text_view"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Free Shipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
